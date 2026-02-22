@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦊 The Fox Courier - Horror Delivery Game</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/Global.css">
+    <link rel="stylesheet" href="css/Style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phaser Framework -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="game-title">🦊 THE FOX COURIER</div>
+            <div class="game-subtitle">ประสบการณ์ส่งของสุดสยอง</div>
+            <div class="loading-spinner"></div>
+            <div class="loading-bar">
+                <div class="loading-bar-fill" id="loading-progress"></div>
+            </div>
+            <div class="loading-text" id="loading-text">กำลังโหลด...</div>
+        </div>
+    </div>
+
+    <!-- Error Screen -->
+    <div id="error-screen">
+        <div class="error-title">⚠️ เกิดข้อผิดพลาด</div>
+        <div class="error-message" id="error-message">
+            โหลดเกมไม่สำเร็จ กรุณารีเฟรชหน้าเว็บหรือตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
+        </div>
+    </div>
+
+    <!-- Game Container -->
+    <div id="game-container"></div>
+
+    <!-- Game Info (optional - can be toggled) -->
+    <div id="game-info">
+        <div class="info-item"><strong>WASD</strong> เดิน</div>
+        <div class="info-item"><strong>SHIFT</strong> วิ่ง</div>
+        <div class="info-item"><strong>F</strong> โต้ตอบ</div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="dist/game.js?v=fix_map_walls_v4"></script>
+</body>
+
+</html>
